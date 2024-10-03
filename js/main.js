@@ -4,8 +4,10 @@
 //console.log(document.querySelector('.javascript-resources'));
 //console.log(document.querySelector('#show-resources'));
 
-const getResourceButton = document.querySelector('#show-resources')
+const getResourceButton = document.getElementById('show-resources');
 
-getResourceButton.addEventListener('click', (onGetResource) => {
-    console.log('clicked!');
-})
+getResourceButton.addEventListener('click', onGetResource);
+
+function onGetResource(e){
+    getResourceButton.replace('d-none ', '');
+}
