@@ -6,8 +6,10 @@
 
 const getResourceButton = document.getElementById('show-resources');
 
+
 getResourceButton.addEventListener('click', onGetResource);
 
-function onGetResource(e){
-    getResourceButton.replace('d-none ', '');
+function onGetResource(){
+    const classReplacement = document.getElementsByClassName('#d-none javascript-resources list-group');
+    classReplacement.ClassList.replace('d-none ', '');
 }
